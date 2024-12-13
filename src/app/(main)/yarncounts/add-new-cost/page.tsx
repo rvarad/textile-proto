@@ -2,11 +2,13 @@ import { Container } from "@mui/material"
 import { FormProvider, useForm } from "react-hook-form"
 
 function Page() {
-	const form = useForm()
+	const {control} = useForm({
+		defaultValues: {}
+	})
 
 	return (
 		<Container>
-			<FormProvider>
+			<FormProvider {...control}>
 				<form></form>
 			</FormProvider>
 		</Container>
