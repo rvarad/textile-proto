@@ -1,4 +1,6 @@
-import { InputAdornment, TextField } from "@mui/material"
+"use client"
+
+import { CSSObject, InputAdornment, TextField } from "@mui/material"
 import { Controller, useFormContext } from "react-hook-form"
 
 interface FormTextFieldProps {
@@ -7,6 +9,7 @@ interface FormTextFieldProps {
 	required: boolean
 	type: "text" | "number"
 	inputAdornmentValue?: string
+	style?: CSSObject
 }
 
 function FormTextField({
@@ -15,6 +18,7 @@ function FormTextField({
 	required,
 	type,
 	inputAdornmentValue,
+	style
 }: FormTextFieldProps) {
 	const { control } = useFormContext()
 
@@ -39,6 +43,7 @@ function FormTextField({
 							),
 						},
 					}}
+					sx={style}
 				/>
 			)}
 		/>

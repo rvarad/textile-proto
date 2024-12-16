@@ -1,18 +1,13 @@
-import { Container } from "@mui/material"
-import { FormProvider, useForm } from "react-hook-form"
+import { Container } from "@mui/material";
+import YarnCountForm from "../YarnCountForm";
 
 function Page() {
-	const {control} = useForm({
-		defaultValues: {}
-	})
-
-	return (
-		<Container>
-			<FormProvider {...control}>
-				<form></form>
-			</FormProvider>
-		</Container>
-	)
+  
+  return (
+    <Container>
+      <YarnCountForm />
+    </Container>
+  );
 }
 
-export default Page
+export default Page;
