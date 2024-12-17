@@ -1,6 +1,5 @@
 "use client";
 
-import { POST } from "@/app/api/v1/weaveSettings/createNewWeave/route";
 import FormTextField from "@/components/FormTextField";
 import { Button, FormControl, Stack } from "@mui/material";
 import { useRouter } from "next/navigation";
