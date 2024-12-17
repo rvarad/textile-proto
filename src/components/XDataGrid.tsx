@@ -48,6 +48,7 @@ function ComplexDataGrid({ columns, rows }: { columns: any; rows: any }) {
         },
         "& .MuiDataGrid-row--borderBottom .MuiDataGrid-columnHeader": {
           border: "none",
+          // fontWeight : 'bold',
         },
         "& .MuiDataGrid-columnHeaderTitleContainer": {
           whiteSpace: "none",
